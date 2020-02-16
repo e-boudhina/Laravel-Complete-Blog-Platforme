@@ -4,6 +4,8 @@
     <list default="true" id="ebd18fe8-f1c4-48dd-bbd4-450d658d5f36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +178,8 @@
       <workItem from="1581717410393" duration="3989000" />
       <workItem from="1581753168154" duration="1862000" />
       <workItem from="1581755065714" duration="8744000" />
-      <workItem from="1581773686460" duration="19042000" />
+      <workItem from="1581773686460" duration="20540000" />
+      <workItem from="1581843588821" duration="4653000" />
     </task>
     <servers />
   </component>
@@ -188,7 +191,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
