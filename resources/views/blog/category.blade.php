@@ -1,7 +1,7 @@
 @extends('layouts.blog')
 
 @section('title')
-    SassBlog
+    Category {{ $category->name }}
 @endsection
 
 @section('header')
@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
 
-                    <h1>Latest Blog Posts</h1>
+                    <h1>{{ $category->name }}</h1>
                     <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
 
                 </div>
@@ -45,26 +45,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                @empty
-                            <p class="text-center">No results found for query <strong>{{ request()->query('search') }}</strong></p>
+                            @empty
+                                <p class="text-center">No results found for query <strong>{{ request()->query('search') }}</strong></p>
                             @endforelse
 
 
                         </div>
 
 
-{{--                        <nav class="flexbox mt-30">--}}
-{{--                            <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>--}}
-{{--                            <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>--}}
-{{--                        </nav>--}}
+                        {{--                        <nav class="flexbox mt-30">--}}
+                        {{--                            <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>--}}
+                        {{--                            <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>--}}
+                        {{--                        </nav>--}}
 
-{{--                        If you like to keep the search query request you must tie it to the pagination or else you'll lose it every time you move from one page to the other --}}
+                        {{--                        If you like to keep the search query request you must tie it to the pagination or else you'll lose it every time you move from one page to the other --}}
                         {{$posts->appends(['search' => request()->query('search')])->links()}}
 
-             </div>
+                    </div>
 
 
-@include('inc.sidebar')
+                    @include('inc.sidebar')
 
 
                 </div>
